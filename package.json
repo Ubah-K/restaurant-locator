@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-locator",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ubah-K/restaurant-locator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ubah-K/restaurant-locator/issues"
+  },
+  "homepage": "https://github.com/Ubah-K/restaurant-locator#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0"
+  }
+}
