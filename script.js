@@ -14,6 +14,9 @@ const fetchRestaurants = async (postcode) => {
     if (!restaurants || restaurants.length === 0) {
       return [];
     }
+    const filteredRestaurants = restaurants.filter(
+      (r) => Array.isArray(r.cuisines) && r.cuisines.length > 0
+    );
     return restaurants.slice(0, 10).map((r) => ({
       name: r.name || r.Brand?.Name,
       cuisines: r.cuisines?.map((c) => c.name || c.Name).join(", ") || "",
