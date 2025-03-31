@@ -27,6 +27,8 @@
 
 2. Expected a consistent data structure from the API given, the assumption relied on the JSON properties to display all the information needed such as the name, cuisine, ratings and the address, displaying the restaurant information correctly. 
 
+3. Assumed it will be all restaurants, therefore filtered API results to exclude vendors with no cuisine data (e.g., CeX, which is not a restaurant).
+
 ## Things that where not clear: 
 1. Initially, it was unclear how to handle the cross-origin resourcing sharing (CORS) restriction when accessing the API through the client-side directly. The need to implement a server-side using Node.js, which subsequently managed the CORS restriction but also helped in securing the API by not exposing them on the client-side. 
 
