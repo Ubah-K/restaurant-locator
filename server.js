@@ -1,10 +1,18 @@
 const express = require ('express');
 const fetch = require ('node-fetch');
 const cors = require ('cors');
+const path = require('path');
 const app = express ();
 const PORT = 3005;
 
 app.use(cors());
+app.use(express.static(__dirname));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html')); 
+});
+
+  
 
 app.get('/api/restaurants/:postcode', async ( req, res) => {
     const postcode = req.params.postcode;

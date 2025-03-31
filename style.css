@@ -1,32 +1,94 @@
+body, h1 {
+    margin: 0;
+    padding:0;
+}
+
 body {
-    font-family: sans-serif, Arial;
-    margin: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #FDF5E6; 
     color: #333;
-    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 50px; 
 }
 
-#restaurants div {
-    background: white;
-    margin-top: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h1 {
+    font-size: 40px; 
+    color: black; 
+    
 }
 
-input [type = "text"], button {
-padding: 10px;
-margin-top: 20px;
-font-size: 16px;
-border: 2px sold #ccc;
-border-radius: 4px;
+h2 {
+    font-size: 24px; 
+    color: #E67300; 
+    font-weight: lighter; 
+}
+
+#postcodeInput, button {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #E67300; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); 
+}
+
+#postcodeInput {
+    width: 80%; 
+    max-width: 300px; 
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #FF8C00; 
     color: white;
-    border: none;
+    border: none; 
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 button:hover {
-    background-color: #45a049;
+    background-color: #E67300; 
 }
+
+#restaurants div {
+    background: orange; 
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    width: 60%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    transition: transform 0.3s ease; 
+}
+#loading {
+    display: none; 
+    font-size: 18px; 
+    color: orange; 
+    text-align: center;
+    padding: 16px; 
+    font-weight: light;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+#restaurants div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background-color: darkorange
+    
+}
+
+.restaurant {
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc; 
+}
+
+.restaurant:last-child {
+    border-bottom: none; 
+}
+
