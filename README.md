@@ -20,7 +20,7 @@
 - `npm start`
 
 **Accessing the solution:**
-- [Access the Restaurant Locator here](http://localhost:3005)
+-  Then open [http://localhost:3005](http://localhost:3005) in your browser
 
 ## Assumptions:
 1. The API provided would be reliable to return the restaurant data when users enter any valid UK postcode, displaying data returned from the API without the need to implement additional data validation.
